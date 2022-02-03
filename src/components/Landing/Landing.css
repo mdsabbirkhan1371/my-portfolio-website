@@ -1,3 +1,11 @@
+body {
+  background: #000024;
+}
+
+iframe {
+  transform: translateX(calc(100% + 40%));
+}
+
 .landing {
   height: 100vh;
   display: flex;
