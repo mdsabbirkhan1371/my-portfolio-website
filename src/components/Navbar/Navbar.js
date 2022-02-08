@@ -280,6 +280,22 @@ function Navbar() {
                                 </div>
                             </NavLink>
                         </Fade>
+
+                        <Fade left>
+                            <NavLink
+                                to='/portfolio'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <MdPhone className={classes.drawerIcon} />
+                                    <span className={classes.drawerLinks}>
+                                        Contact
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
                     </div>
                 </div>
             </Drawer>
