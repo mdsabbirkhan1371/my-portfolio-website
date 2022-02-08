@@ -291,7 +291,7 @@ function Navbar() {
                                 <div className={classes.drawerItem}>
                                     <MdPhone className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
-                                        Contact
+                                        Portfolios
                                     </span>
                                 </div>
                             </NavLink>
