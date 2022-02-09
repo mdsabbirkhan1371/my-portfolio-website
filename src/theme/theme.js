@@ -218,10 +218,10 @@ export const orangeThemeDark = {
   tertiary70: "#eaeaeab3",
   tertiary50: "#eaeaea80",
   aboutimg1: orangeThemeboy,
-  aboutimg2: orangeThemegirl,
-  eduimg: eduOrange,
-  expimg: expOrange,
-  contactsimg: contactsOrange,
+  aboutimg2: orangeThemeboy,
+  eduimg: eduNavy,
+  expimg: expNavy,
+  contactsimg: contactsNavy,
 };
 
 export const purpleThemeLight = {

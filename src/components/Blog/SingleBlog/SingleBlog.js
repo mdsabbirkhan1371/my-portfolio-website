@@ -1,10 +1,10 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 
-import placeholder from '../../../assets/png/placeholder.png'
-import './SingleBlog.css'
+import placeholder from '../../../assets/png/placeholder.png';
+import './SingleBlog.css';
 
-function SingleBlog({ theme, title, desc, date, image, url, id }) {
+function SingleBlog({ theme, title, desc, date, image, url, id, source }) {
     return (
       <Fade bottom>
         <a

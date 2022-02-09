@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { SingleBlog } from "../../components";
+import { Singleportfolio } from "../../components";
 import { Helmet } from "react-helmet";
 import { Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
@@ -8,15 +8,16 @@ import { AiOutlineHome } from "react-icons/ai";
 
 import "./portfolio.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { blogData } from "../../data/blogData";
+import { portfolioData } from "../../data/portfolioData";
+import { socialsData } from "../../data/socialsData";
 import { headerData } from "../../data/headerData";
 
 function PortfolioPage() {
   const [search, setSearch] = useState("");
   const { theme } = useContext(ThemeContext);
 
-  const filteredArticles = blogData.filter((blog) => {
-    const content = blog.title + blog.description + blog.date;
+  const filteredArticles = portfolioData.filter((portfolio) => {
+    const content = portfolio.title + portfolio.description + portfolio.source;
     return content.toLowerCase().includes(search.toLowerCase());
   });
 
@@ -74,7 +75,7 @@ function PortfolioPage() {
   return (
     <div className="blogPage" style={{ backgroundColor: theme.secondary }}>
       <Helmet>
-        <title>{headerData.name} | Blog</title>
+        <title>{headerData.name} | Websites</title>
       </Helmet>
       <div
         className="blogPage--header"
@@ -83,7 +84,8 @@ function PortfolioPage() {
         <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
-        <h1 style={{ color: theme.secondary }}>Blogs</h1>
+        <h1 style={{ color: theme.secondary }}>Websites Templates</h1>
+        <a style={{ color: theme.secondary }} class="about-a" href={socialsData.github} target="_blank" rel="noreferrer">My Github</a>
       </div>
       <div className="blogPage--container">
         <div className="blog--search">
@@ -91,7 +93,7 @@ function PortfolioPage() {
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Seach blog..."
+            placeholder="Search websites..."
             className={classes.search}
           />
         </div>
@@ -103,16 +105,16 @@ function PortfolioPage() {
             alignItems="center"
             justifyContent="center"
           >
-            {filteredArticles.reverse().map((blog) => (
-              <SingleBlog
+            {filteredArticles.reverse().map((portfolio) => (
+              <Singleportfolio
                 theme={theme}
-                title={blog.title}
-                desc={blog.description}
-                date={blog.date}
-                image={blog.image}
-                url={blog.url}
-                key={blog.id}
-                id={blog.id}
+                title={portfolio.title}
+                desc={portfolio.description}
+                image={portfolio.image}
+                url={portfolio.url}
+                key={portfolio.id}
+                id={portfolio.id}
+                source={portfolio.source}
               />
             ))}
           </Grid>
