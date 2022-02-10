@@ -4,6 +4,12 @@ import full from '../assets/png/full.jpg';
 import blog from '../assets/png/Blog.png';
 import portfolio from '../assets/png/portfolio.jpg';
 import master from '../assets/png/old-landing-page.PNG';
+import Sample from "../assets/png/Sample-Personal-Website.jpg";
+import Game from "../assets/png/Game.jpg";
+import Site from "../assets/png/Website.jpg";
+import Portfolio from "../assets/png/Portfolio-1.jpg";
+import AYANS from "../assets/png/AYANS.jpg";
+import AMS from "../assets/png/AMS.jpg";
 
 export const portfolioData = [
   {
@@ -67,6 +73,55 @@ export const portfolioData = [
     url: "https://programing-school.github.io/Bootstrap-5-portfolio-template/",
     source:
       "https://github.com/Programing-School/Bootstrap-5-portfolio-template",
+  },
+  {
+    id: 8,
+    title: "Sample-Personal-Website",
+    description:
+      "Full responsive Personal Website using {Html, CSS, JavaScript}",
+    image: Sample,
+    url: "https://programing-school.github.io/Sample-Personal-Website/",
+    source: "https://github.com/Programing-School/Sample-Personal-Website.git",
+  },
+  {
+    id: 9,
+    title: "Rock-Paper-Scissors-game",
+    description: "Full responsive Rock-Paper Scissors Game",
+    url: "https://programing-school.github.io/Rock-Paper-scissors-game/",
+    source: "https://github.com/Programing-School/Rock-Paper-scissors-game.git",
+    image: Game,
+  },
+  {
+    id: 10,
+    title: "The Html CSS Website",
+    description: "Full responsive Site",
+    url: "https://programing-school.github.io/The-HTML-CSS-Website/",
+    source: "https://github.com/Programing-School/The-HTML-CSS-Website",
+    image: Site,
+  },
+  {
+    id: 11,
+    title: "Portfolio-template-1",
+    description: "Full responsive Portfolio",
+    url: "https://programing-school.github.io/Portfolio-template-1/",
+    source: "https://github.com/Programing-School/Portfolio-template-1",
+    image: Portfolio,
+  },
+  {
+    id: 12,
+    title: "AMYs-Portfolio-Template",
+    description: "Full responsive Portfolio Site",
+    url: "https://programing-school.github.io/AMYs-Portfolio-Template/",
+    source: "https://github.com/Programing-School/AMYs-Portfolio-Template",
+    image: AYANS,
+  },
+  {
+    id: 13,
+    title: "AYANs-portfolio-Template",
+    description: "Full responsive Portfolio Website",
+    url: "https://ayan-s-portfolio-template.vercel.app/",
+    source: "https://github.com/Programing-School/AYANs-portfolio-Template",
+    image: AMS,
   },
 ];
 
