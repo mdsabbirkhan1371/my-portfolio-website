@@ -10,6 +10,7 @@ import Site from "../assets/png/Website.jpg";
 import Portfolio from "../assets/png/Portfolio-1.jpg";
 import AYANS from "../assets/png/AYANS.jpg";
 import AMS from "../assets/png/AMS.jpg";
+import Max from "../assets/png/Max.jpg";
 
 export const portfolioData = [
   {
@@ -122,6 +123,14 @@ export const portfolioData = [
     url: "https://ayan-s-portfolio-template.vercel.app/",
     source: "https://github.com/Programing-School/AYANs-portfolio-Template",
     image: AMS,
+  },
+  {
+    id: 14,
+    title: "Max'Blog",
+    description: "Full responsive Portfolio and blog Website",
+    url: "https://blog-website-alpha.vercel.app/",
+    source: "https://github.com/Programing-School/Blog-Website",
+    image: Max,
   },
 ];
 
