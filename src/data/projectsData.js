@@ -1,8 +1,8 @@
-import one from '../assets/svg/projects/one.svg'
-import two from '../assets/svg/projects/two.svg'
-import three from '../assets/svg/projects/three.svg'
-import four from '../assets/svg/projects/four.svg'
-// import five from '../assets/svg/projects/five.svg'
+import one from '../assets/svg/projects/one.svg';
+import two from '../assets/svg/projects/two.svg';
+import three from '../assets/svg/projects/three.svg';
+import four from '../assets/svg/projects/four.svg';
+import five from '../assets/svg/projects/five.svg';
 // import six from '../assets/svg/projects/six.svg'
 // import seven from '../assets/svg/projects/seven.svg'
 // import eight from '../assets/svg/projects/eight.svg'
@@ -44,6 +44,15 @@ export const projectsData = [
     demo: "https://programing-school.github.io/Rock-Paper-scissors-game/",
     code: "https://github.com/Programing-School/Rock-Paper-scissors-game.git",
     image: four,
+  },
+  {
+    id: 5,
+    projectName: "Meetup Project",
+    projectDesc: "Fully Back-End Project with Next JS",
+    tags: ["JavaScript", "Next JS", "Mongo DB"],
+    demo: "https://meetup-next-js-project.vercel.app/",
+    code: "https://github.com/Programing-School/Meetup-Next-JS-Project",
+    image: five,
   },
 ];
 

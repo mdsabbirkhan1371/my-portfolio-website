@@ -11,6 +11,8 @@ import Portfolio from "../assets/png/Portfolio-1.jpg";
 import AYANS from "../assets/png/AYANS.jpg";
 import AMS from "../assets/png/AMS.jpg";
 import Max from "../assets/png/Max.jpg";
+import Portfoliotem from "../assets/png/demo.png";
+import blogtem from "../assets/png/demo.gif";
 
 export const portfolioData = [
   {
@@ -131,6 +133,23 @@ export const portfolioData = [
     url: "https://blog-website-alpha.vercel.app/",
     source: "https://github.com/Programing-School/Blog-Website",
     image: Max,
+  },
+  {
+    id: 15,
+    title: "Portfolio Template",
+    description: "Full responsive Portfolio Template Website",
+    url: "https://portfolio-template-delta.vercel.app/",
+    source: "https://github.com/Programing-School/Portfolio-Template",
+    image: Portfoliotem,
+  },
+  {
+    id: 16,
+    title: "Portfolio blog Template",
+    description:
+      "Full responsive Blog Template Website, Notice that belongs to the previous",
+    url: "https://portfolio-template-blog.vercel.app/",
+    source: "https://github.com/soumyajit4419/Bits-0f-C0de",
+    image: blogtem,
   },
 ];
 
