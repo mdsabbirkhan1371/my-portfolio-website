@@ -4,3 +4,11 @@
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
+* {
+    transition: all 0.5s;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
