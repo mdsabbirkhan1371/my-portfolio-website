@@ -2,7 +2,7 @@ import React, { useContext} from 'react';
 
 import './Achievement.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { achievementData } from '../../data/achievementData'
+import { achievementData } from '../../data/achievementData';
 import AchievementCard from './AchievementCard';
 
 function Achievement() {

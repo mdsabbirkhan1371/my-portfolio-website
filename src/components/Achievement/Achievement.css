@@ -90,6 +90,10 @@
     margin-right: 6px;
 }
 
+.achievecard-field h5 {
+    width: 200px;
+}
+
 .achievecard-details1 h2 {
     font-family: var(--primaryFont);
     font-weight: 500;
@@ -109,7 +113,7 @@
 }
 
 .achievecard-imgcontainer > img {
-    width: 150px;
+    /* width: 150px; */
     height: 130px;
     border-radius: 10px;
 }
