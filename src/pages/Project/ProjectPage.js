@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Grid } from '@material-ui/core'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { AiOutlineHome } from "react-icons/ai";
 
@@ -73,9 +73,9 @@ function ProjectPage() {
                 <title>{headerData.name} | Projects</title>
             </Helmet>
             <div className="projectPage-header" style={{backgroundColor:theme.primary}}>
-                <a href="/">
+                <Link href="/">
                         <AiOutlineHome className={classes.home}/>
-                </a>
+                </Link>
                 <h1 style={{color: theme.secondary}}>Projects</h1>
             </div>
            <div className="projectPage-container">
