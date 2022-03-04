@@ -3,7 +3,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { BsFillGearFill } from 'react-icons/bs';
-import { MdPhone, MdOutlineWebAsset } from "react-icons/md";
+import { MdOutlineWebAsset } from "react-icons/md";
 import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
