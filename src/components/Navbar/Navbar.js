@@ -34,9 +34,9 @@ function Navbar() {
             color: theme.tertiary,
             cursor: 'pointer',
             transform: 'translateY(-10px)',
-            transition: 'color 0.3s',
+            transition: 'color 0.5s',
             '&:hover': {
-                color: theme.primary,
+                color: "#222",
             },
             [t.breakpoints.down('sm')]: {
                 fontSize: '2.5rem',

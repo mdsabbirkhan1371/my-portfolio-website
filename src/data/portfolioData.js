@@ -13,6 +13,7 @@ import AMS from "../assets/png/AMS.jpg";
 import Max from "../assets/png/Max.jpg";
 import Portfoliotem from "../assets/png/demo.png";
 import blogtem from "../assets/png/demo.gif";
+import Gatsby from "../assets/svg/portfolio/Gatsby_Monogram.svg";
 
 export const portfolioData = [
   {
@@ -150,6 +151,15 @@ export const portfolioData = [
     url: "https://portfolio-template-blog.vercel.app/",
     source: "https://github.com/soumyajit4419/Bits-0f-C0de",
     image: blogtem,
+  },
+  {
+    id: 17,
+    title: "Gatsby Portfolio Template",
+    description:
+      "Full responsive Blog Template Website, Notice that belongs to the previous",
+    url: "https://gatsby-portfolio-vert.vercel.app/",
+    source: "https://github.com/Programing-School/Gatsby-Portfolio",
+    image: Gatsby,
   },
 ];
 
