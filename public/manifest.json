@@ -3,17 +3,17 @@
   "name": "Developer Portfolio template by Programming-School",
   "icons": [
     {
-      "src": "channels4_profile.jpg",
+      "src": "Logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "channels4_profile.jpg",
+      "src": "Logo.png",
       "type": "image/png",
       "sizes": "64x64"
     },
     {
-      "src": "channels4_profile.jpg",
+      "src": "Logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

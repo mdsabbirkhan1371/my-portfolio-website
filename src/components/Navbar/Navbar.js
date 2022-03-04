@@ -8,6 +8,7 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import Logo from '../../assets/svg/Logo.svg'
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
@@ -239,22 +240,8 @@ function Navbar() {
                   duration={2000}
                 >
                   <div className={classes.drawerItem}>
-                    <MdPhone className={classes.drawerIcon} />
-                    <span className={classes.drawerLinks}>Contact</span>
-                  </div>
-                </NavLink>
-              </Fade>
-
-              <Fade left>
-                <NavLink
-                  to="/portfolio"
-                  smooth={true}
-                  spy="true"
-                  duration={2000}
-                >
-                  <div className={classes.drawerItem}>
-                    <MdPhone className={classes.drawerIcon} />
-                    <span className={classes.drawerLinks}>Portfolios</span>
+                    <img className={classes.drawerIcon} src={Logo} alt="brand" />
+                    <span className={classes.drawerLinks}>Brand</span>
                   </div>
                 </NavLink>
               </Fade>

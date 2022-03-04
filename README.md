@@ -35,6 +35,7 @@
     - SKILLS
     - EXPERIENCE
     - PROJECTS 
+    - WEBSITE TEMPLATES
     - Achievements <br />
 - SERVICES 
     - TESTIMONIALS <br />
@@ -173,9 +174,7 @@ yarn start
 ├── package.json     
 ├── public
 │   ├── _redirects   
-│   ├── favicon.ico  
-│   ├── favicon.png
-│   ├── favicon512.png
+│   ├── channels4_profile.jpg  
 │   ├── index.html
 │   ├── manifest.json
 │   └── robots.txt
@@ -187,15 +186,19 @@ yarn start
 │   │   │   └── Bestermind
 │   │   │       └── BestermindRegular.ttf
 │   │   ├── pdf
-│   │   │   └── resume.pdf
+│   │   │   └── RESUME.pdf
+│   │   ├── ZIP
+│   │   │   └── Programming-School Logo.rar
 │   │   └── svg
 │   │       ├── about
+|   |       ├── brand
 │   │       ├── contacts
 │   │       ├── education
 │   │       ├── experience
 │   │       ├── projects
 │   │       ├── skills
 │   │       ├── social
+│   │       ├── Services
 │   │       └── testimonials
 │   ├── components
 │   │   ├── About
@@ -214,6 +217,12 @@ yarn start
 │   │   │   └── SingleBlog
 │   │   │       ├── SingleBlog.css
 │   │   │       └── SingleBlog.js
+│   │   ├── Portfolio
+│   │   │   ├── portfolio.css
+│   │   │   ├── portfolio.js
+│   │   │   └── Singleportfolio
+│   │   │       ├── portfolio.css
+│   │   │       └── Singleportfolio.js
 │   │   ├── Contacts
 │   │   │   ├── Contacts.css
 │   │   │   └── Contacts.js
@@ -259,6 +268,7 @@ yarn start
 │   │   ├── aboutData.js
 │   │   ├── achievementData.js
 │   │   ├── blogData.js
+│   │   ├── portfolioData.js
 │   │   ├── contactsData.js
 │   │   ├── educationData.js
 │   │   ├── experienceData.js
@@ -275,13 +285,18 @@ yarn start
 │   │   ├── Blog
 │   │   │   ├── BlogPage.css
 │   │   │   └── BlogPage.js
+│   │   ├── brand
+│   │   │   ├── brand.css
+│   │   │   └── brand.js
+│   │   ├── Portfolios
+│   │   │   ├── portfolio.css
+│   │   │   └── portfolio.js
 │   │   ├── Main
 │   │   │   └── Main.js
 │   │   ├── Project
 │   │   │   ├── ProjectPage.css
 │   │   │   └── ProjectPage.js
 │   │   └── index.js
-│   ├── reportWebVitals.js
 │   ├── theme
 │   │   ├── images.js
 │   │   └── theme.js
