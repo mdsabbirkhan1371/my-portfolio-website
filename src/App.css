@@ -13,6 +13,7 @@ body {
   margin: 0;
 }
 
+
 @font-face {
   font-family: "Inter UI";
   font-style: normal;
@@ -3744,10 +3745,10 @@ video {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: start;
+  /* -webkit-align-items: start; */
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: start;
+  /* align-items: start; */
   max-width: 420px;
   width: 100%;
   margin-left: auto;
