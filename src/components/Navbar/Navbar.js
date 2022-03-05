@@ -240,7 +240,7 @@ function Navbar() {
                   duration={2000}
                 >
                   <div className={classes.drawerItem}>
-                    <img className={classes.drawerIcon} src={Logo} alt="brand" />
+                    <img className={classes.drawerIcon+`cus`} src={Logo} style={{ width: "100px" }} alt="brand" />
                     <span className={classes.drawerLinks}>Brand</span>
                   </div>
                 </NavLink>

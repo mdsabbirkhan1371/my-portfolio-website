@@ -1,3 +1,7 @@
+.cus {
+    transform: translateX(-100px);
+}
+
 .navbar {
     height: 6.5rem;
     position: absolute;
