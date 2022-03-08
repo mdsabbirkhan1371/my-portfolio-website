@@ -19,7 +19,7 @@
 .blogPage--header h1 {
     font-size: 4rem;
     font-family: var(--primaryFont);
-    transform: translateX(50px);
+    transform: translateX(100px);
 }
 
 .blogPage--header .about-a {
