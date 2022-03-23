@@ -1,14 +1,13 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-
-import { Navbar, Footer, Landing, About, Skills, Testimonials, Blog, /*Education */ Experience, Contacts, Projects, Services, Portfolio, Achievement } from '../../components'
-import { headerData } from '../../data/headerData'
+import { Helmet } from 'react-helmet';
+import { Navbar, Footer, Landing, About, Skills, /*Testimonials*/ Blog, /*Education */ Experience, Contacts, Projects, Services, Portfolio, Achievement, Gallery } from '../../components';
+import { headerData } from '../../data/headerData';
 
 function Main() {
     return (
         <div>
             <Helmet>
-                <title>{headerData.name} | Porfolio</title>
+                <title>{headerData.name}</title>
             </Helmet>
 
             <Navbar />
@@ -18,10 +17,11 @@ function Main() {
             <Skills />
             <Experience />
             <Projects />
+            {/* <Gallery /> */}
             <Portfolio />
             <Achievement />
             <Services />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Blog />
             <Contacts />
             <Footer />

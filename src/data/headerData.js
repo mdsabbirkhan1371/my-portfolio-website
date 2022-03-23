@@ -1,5 +1,5 @@
 import resume from '../assets/pdf/RESUME.pdf';
-import logo from '../assets/png/moh.png'
+import logo from '../assets/Logo.png';
 
 export const headerData = {
     name: 'Mohamed Ehab',
