@@ -17,220 +17,192 @@ import {
   FaStackOverflow,
   FaCodepen,
   FaInstagram,
+  FaFacebook,
 } from "react-icons/fa";
 
 function Landing() {
-    const { theme, drawerOpen } = useContext(ThemeContext);
+  const { theme, drawerOpen } = useContext(ThemeContext);
 
-    const useStyles = makeStyles((t) => ({
-      socialIcon: {
-        color: "#555",
-      },
-      resumeBtn: {
-        color: theme.primary,
-        borderRadius: "30px",
-        textTransform: "inherit",
-        textDecoration: "none",
-        width: "150px",
-        fontSize: "1rem",
-        fontWeight: "500",
-        height: "50px",
-        fontFamily: "var(--primaryFont)",
-        border: `3px solid ${theme.primary}`,
-        transition: "100ms ease-out",
-        "&:hover": {
-          backgroundColor: theme.tertiary,
-          color: theme.secondary,
-          border: `3px solid ${theme.tertiary}`,
-        },
-        [t.breakpoints.down("sm")]: {
-          width: "180px",
-        },
-      },
-      contactBtn: {
-        backgroundColor: theme.primary,
+  const useStyles = makeStyles((t) => ({
+    socialIcon: {
+      color: "#555",
+    },
+    resumeBtn: {
+      color: theme.primary,
+      borderRadius: "30px",
+      textTransform: "inherit",
+      textDecoration: "none",
+      width: "150px",
+      fontSize: "1rem",
+      fontWeight: "500",
+      height: "50px",
+      fontFamily: "var(--primaryFont)",
+      border: `3px solid ${theme.primary}`,
+      transition: "100ms ease-out",
+      "&:hover": {
+        backgroundColor: theme.tertiary,
         color: theme.secondary,
-        borderRadius: "30px",
-        textTransform: "inherit",
-        textDecoration: "none",
-        width: "150px",
-        height: "50px",
-        fontSize: "1rem",
-        fontWeight: "500",
-        fontFamily: "var(--primaryFont)",
-        border: `3px solid ${theme.primary}`,
-        transition: "100ms ease-out",
-        "&:hover": {
-          backgroundColor: theme.secondary,
-          color: theme.tertiary,
-          border: `3px solid ${theme.tertiary}`,
-        },
-        [t.breakpoints.down("sm")]: {
-          display: "none",
-        },
+        border: `3px solid ${theme.tertiary}`,
       },
-      h1tag: {
-        fontSize: "1.5rem",
+      [t.breakpoints.down("sm")]: {
+        width: "180px",
       },
-    }));
+    },
+    contactBtn: {
+      backgroundColor: theme.primary,
+      color: theme.secondary,
+      borderRadius: "30px",
+      textTransform: "inherit",
+      textDecoration: "none",
+      width: "150px",
+      height: "50px",
+      fontSize: "1rem",
+      fontWeight: "500",
+      fontFamily: "var(--primaryFont)",
+      border: `3px solid ${theme.primary}`,
+      transition: "100ms ease-out",
+      "&:hover": {
+        backgroundColor: theme.secondary,
+        color: theme.tertiary,
+        border: `3px solid ${theme.tertiary}`,
+      },
+      [t.breakpoints.down("sm")]: {
+        display: "none",
+      },
+    },
+    h1tag: {
+      fontSize: "1.5rem",
+    },
+  }));
 
-    const classes = useStyles();
+  const classes = useStyles();
 
-    return (
-      <div className="landing">
-        <div className="landing--container">
-          <div
-            className="landing--container-left"
-            style={{ backgroundColor: theme.primary }}
-          >
-            <div className="lcl--content">
-              {socialsData.twitter && (
-                <a
-                  href={socialsData.twitter}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaTwitter aria-label="Twitter" className="landing--social" />
-                </a>
-              )}
-              {socialsData.github && (
-                <a
-                  href={socialsData.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaGithub aria-label="GitHub" className="landing--social" />
-                </a>
-              )}
-              {socialsData.linkedIn && (
-                <a
-                  href={socialsData.linkedIn}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaLinkedinIn
-                    aria-label="LinkedIn"
-                    className="landing--social"
-                  />
-                </a>
-              )}
-              {socialsData.instagram && (
-                <a
-                  href={socialsData.instagram}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaInstagram
-                    aria-label="Instagram"
-                    className="landing--social"
-                  />
-                </a>
-              )}
-              {socialsData.blogger && (
-                <a
-                  href={socialsData.blogger}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaBloggerB
-                    aria-label="Blogger"
-                    className="landing--social"
-                  />
-                </a>
-              )}
-              {socialsData.youtube && (
-                <a
-                  href={socialsData.youtube}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaYoutube aria-label="YouTube" className="landing--social" />
-                </a>
-              )}
-              {/* {socialsData.reddit && (
-                                <a
-                                    href={socialsData.reddit}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    className={classes.socialIcon}
-                                >
-                                    <FaRedditAlien aria-label='Reddit' />
-                                </a>
-                            )} */}
-              {socialsData.stackOverflow && (
-                <a
-                  href={socialsData.stackOverflow}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaStackOverflow
-                    aria-label="Stack Overflow"
-                    className="landing--social"
-                  />
-                </a>
-              )}
-              {socialsData.codepen && (
-                <a
-                  href={socialsData.codepen}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaCodepen aria-label="CodePen" className="landing--social" />
-                </a>
-              )}
-            </div>
+  return (
+    <div className="landing">
+      <div className="landing--container">
+        <div
+          className="landing--container-left"
+          style={{ backgroundColor: theme.primary }}
+        >
+          <div className="lcl--content">
+            {socialsData.twitter && (
+              <a
+                href={socialsData.twitter}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.socialIcon}
+              >
+                <FaTwitter aria-label="Twitter" className="landing--social" />
+              </a>
+            )}
+            {socialsData.github && (
+              <a
+                href={socialsData.github}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.socialIcon}
+              >
+                <FaGithub aria-label="GitHub" className="landing--social" />
+              </a>
+            )}
+            {socialsData.linkedIn && (
+              <a
+                href={socialsData.linkedIn}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.socialIcon}
+              >
+                <FaLinkedinIn
+                  aria-label="LinkedIn"
+                  className="landing--social"
+                />
+              </a>
+            )}
+            {socialsData.instagram && (
+              <a
+                href={socialsData.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.socialIcon}
+              >
+                <FaInstagram
+                  aria-label="Instagram"
+                  className="landing--social"
+                />
+              </a>
+            )}
+
+            {socialsData.stackOverflow && (
+              <a
+                href={socialsData.stackOverflow}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.socialIcon}
+              >
+                <FaStackOverflow
+                  aria-label="Stack Overflow"
+                  className="landing--social"
+                />
+              </a>
+            )}
+            {socialsData.stackOverflow && (
+              <a
+                href={socialsData.facebook}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.socialIcon}
+              >
+                <FaFacebook
+                  aria-label="Stack Overflow"
+                  className="landing--social"
+                />
+              </a>
+            )}
           </div>
-          <img
-            src={headerData.image}
-            alt=""
-            className="landing--img"
-            style={{
-              opacity: `${drawerOpen ? "0" : "1"}`,
-              borderColor: theme.secondary,
-            }}
-          />
-          <div
-            className="landing--container-right"
-            style={{ backgroundColor: theme.secondary }}
-          >
-            <div className="lcr--content" style={{ color: theme.tertiary }}>
-              <h6>{headerData.title}</h6>
-              <h1 className={classes.h1tag}>{headerData.name}</h1>
-              <p>{headerData.desciption}</p>
+        </div>
+        <img
+          src={headerData.image}
+          alt=""
+          className="landing--img"
+          style={{
+            opacity: `${drawerOpen ? "0" : "1"}`,
+            borderColor: theme.secondary,
+          }}
+        />
+        <div
+          className="landing--container-right"
+          style={{ backgroundColor: theme.secondary }}
+        >
+          <div className="lcr--content" style={{ color: theme.tertiary }}>
+            <h6>{headerData.title}</h6>
+            <h1 className={classes.h1tag}>{headerData.name}</h1>
+            <p>{headerData.desciption}</p>
 
-              <div className="lcr-buttonContainer">
-                {headerData.resumePdf && (
-                  <a
-                    href={headerData.resumePdf}
-                    download="resume"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Button className={classes.resumeBtn}>Download CV</Button>
-                  </a>
-                )}
-                <NavLink
-                  to="/#contacts"
-                  smooth={true}
-                  spy="true"
-                  duration={2000}
+            <div className="lcr-buttonContainer">
+              {headerData.resumePdf && (
+                <a
+                  href={headerData.resumePdf}
+                  download="resume"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <Button className={classes.contactBtn}>Contact</Button>
-                </NavLink>
-              </div>
+                  <Button className={classes.resumeBtn}>Download CV</Button>
+                </a>
+              )}
+              <NavLink
+                to="/#contacts"
+                smooth={true}
+                spy="true"
+                duration={2000}
+              >
+                <Button className={classes.contactBtn}>Contact</Button>
+              </NavLink>
             </div>
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Landing;
